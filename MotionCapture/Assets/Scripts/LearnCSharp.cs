@@ -21,4 +21,14 @@ public class LearnCSharp : MonoBehaviour
 
     public Color blue = Color.blue;
     public Color red = new Color(0.7f, 0.1f, 0.2f);
+
+    // 類別類型：可存放帶有這些類別的物件
+    public AudioClip sound;
+    public Camera cam;
+    public Light lig;
+    public Transform camPos;
+    // GameObject 指的是 Hierarchy 內所有物件
+    public GameObject obj;
+
+    public Debug deb;
 }
