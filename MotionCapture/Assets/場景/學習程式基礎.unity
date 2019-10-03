@@ -219,7 +219,7 @@ MonoBehaviour:
   cam: {fileID: 1134413138}
   lig: {fileID: 224428988}
   camPos: {fileID: 1134413139}
-  obj: {fileID: 308395919}
+  obj: {fileID: 1109437379}
 --- !u!4 &308395921
 Transform:
   m_ObjectHideFlags: 0
