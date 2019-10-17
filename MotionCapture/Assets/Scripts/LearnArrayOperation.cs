@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
 public class LearnArrayOperation : MonoBehaviour
 {
@@ -37,5 +36,33 @@ public class LearnArrayOperation : MonoBehaviour
         Debug.Log(10 <= 3);     // f
         Debug.Log(10 == 3);     // f
         Debug.Log(10 != 3);     // t
+
+        // 當 () 內為 true 會執行 {}
+        if (studentA >= 60)
+        {
+            Debug.Log("你及格了!");
+        }
+        else if (studentA >= 50)
+        {
+            Debug.Log("你可以補考~");
+        }
+        else if (studentA >= 40)
+        {
+            Debug.Log("下學期再來");
+        }
+        // 當 () 內為 false 會執行 {}
+        else
+        {
+            Debug.Log("你不及格!");
+        }
+
+    }
+
+    private void Update()
+    {
+        // 第一種用法：輸入按鍵名稱
+        //Debug.Log(Input.GetKeyDown("space"));
+        // 第一種用法：使用按鍵列舉
+        Debug.Log(Input.GetKeyDown(KeyCode.Space));
     }
 }

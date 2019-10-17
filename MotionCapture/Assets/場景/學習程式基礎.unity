@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d2d84b3d67bdb4b8a1ad7a21f60059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  studentA: 10
+  studentA: 32
   studentB: 20
   studentC: 30
   students: 0a000000140000001e00000028000000320000003c00000046000000500000005a000000
