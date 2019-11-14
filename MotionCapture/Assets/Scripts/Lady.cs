@@ -11,10 +11,14 @@ public class Lady : MonoBehaviour
     public string parJump = "跳躍開關";
     public string parDead = "死亡開關";
 
-
     private void Start()
     {
         ani = GetComponent<Animator>(); // 動畫元件欄位 =  取得元件<泛型>();
+    }
+
+    private void Update()
+    {
+        Walk();
     }
 
     // 定義方法
@@ -26,7 +30,8 @@ public class Lady : MonoBehaviour
     /// </summary>
     private void Walk()
     {
-
+        // 動畫：跑步 - 按下前後時 true
+        ani.SetBool(parRun, Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0);
     }
 
     /// <summary>
