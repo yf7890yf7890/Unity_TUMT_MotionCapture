@@ -4,6 +4,14 @@ public class Lady : MonoBehaviour
 {
     private Animator ani;               // 動畫元件
 
+    [Header("動畫控制器：參數名稱")]
+    public string parRun = "跑步開關";
+    public string parAtk = "攻擊觸發";
+    public string parDam = "受傷觸發";
+    public string parJump = "跳躍開關";
+    public string parDead = "死亡開關";
+
+
     private void Start()
     {
         ani = GetComponent<Animator>(); // 動畫元件欄位 =  取得元件<泛型>();
