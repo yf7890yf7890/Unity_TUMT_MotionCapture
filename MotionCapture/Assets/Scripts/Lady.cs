@@ -2,6 +2,13 @@
 
 public class Lady : MonoBehaviour
 {
+    private Animator ani;               // 動畫元件
+
+    private void Start()
+    {
+        ani = GetComponent<Animator>(); // 動畫元件欄位 =  取得元件<泛型>();
+    }
+
     // 定義方法
     // 修飾詞 傳回類型 方法名稱 (參數) { 敘述 }
     // void 無回傳
